@@ -22,7 +22,7 @@ local function countTools()
 end
 
 local function resetChar()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-94.50464630126953, -495.83033752441406, -325.2867736816406)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-94.50464630126953, -498.83033752441406, -325.2867736816406)
     wait()
 	game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end
