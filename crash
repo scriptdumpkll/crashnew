@@ -22,7 +22,7 @@ local function countTools()
 end
 
 local function resetChar()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-94.50464630126953, -490.83033752441406, -325.2867736816406)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-94.50464630126953, -499.83033752441406, -325.2867736816406)
 end
 
 
@@ -167,7 +167,6 @@ else
                             end
                         until not player.Backpack:FindFirstChild("[FlowersTool]") and not player.Character:FindFirstChild("[FlowersTool]")
                         resetChar()
-                        wait(0.5)
                     end
                 end)
             end
