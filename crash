@@ -167,6 +167,7 @@ else
                             end
                         until not player.Backpack:FindFirstChild("[FlowersTool]") and not player.Character:FindFirstChild("[FlowersTool]")
                         resetChar()
+                        wait(0.5)
                     end
                 end)
             end
