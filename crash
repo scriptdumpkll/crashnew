@@ -22,21 +22,15 @@ local function countTools()
 end
 
 local function resetChar()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-94.50464630126953, -499.83033752441406, -325.2867736816406)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-94.50464630126953, -495.83033752441406, -325.2867736816406)
+    wait()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end
 
 local function resetChar2()
     for i,v in pairs(player.Character:GetChildren()) do
         if v:IsA("MeshPart") or v:IsA("BasePart") or v:IsA("Accessory") then
             v:Destroy()
-        end
-    end
-end
-
-local function equipallcans()
-    for i,v in pairs(player.Backpack:GetChildren()) do
-        if v:IsA("Tool") and v.Name == "[SprayCan]" then
-            v.Parent = player.Character
         end
     end
 end
