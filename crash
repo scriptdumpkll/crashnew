@@ -1,6 +1,6 @@
 getgenv().G_Settings = {
     host = 274127150,
-    fps = 2
+    fps = 3
 }
 
 if not game:IsLoaded() then
@@ -24,7 +24,6 @@ end
 local function resetChar()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-94.50464630126953, -499.83033752441406, -325.2867736816406)
 end
-
 
 local function resetChar2()
     for i,v in pairs(player.Character:GetChildren()) do
@@ -167,6 +166,7 @@ else
                             end
                         until not player.Backpack:FindFirstChild("[FlowersTool]") and not player.Character:FindFirstChild("[FlowersTool]")
                         resetChar()
+                        task.wait(0.5)
                     end
                 end)
             end
