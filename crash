@@ -146,7 +146,7 @@ else
                     if enabled then
                         repeat  
                         	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-                            player.Character.HumanoidRootPart.CFrame = workspace.Ignored.Shop:FindFirstChild("[Flowers] - $5").Head.CFrame * CFrame.new(math.random(-4,4),1.3,3)
+                            player.Character.HumanoidRootPart.CFrame = workspace.Ignored.Shop:FindFirstChild("[Flowers] - $5").Head.CFrame * CFrame.new(math.random(-4,4),1.3,-3)
                             fireclickdetector(workspace.Ignored.Shop:FindFirstChild("[Flowers] - $5"):FindFirstChild("ClickDetector"))
                             wait(0.01)
                         until player.Backpack:FindFirstChild("[FlowersTool]") or player.Character:FindFirstChild("[FlowersTool]")
