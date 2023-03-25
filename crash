@@ -23,7 +23,7 @@ end
 
 local function resetalt()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(1000,-300,5000)
-    wait()
+    wait(0.3)
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
         if v:IsA("Tool") then
             v.Parent = game.Players.LocalPlayer.Character
