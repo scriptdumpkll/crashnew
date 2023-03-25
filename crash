@@ -23,7 +23,7 @@ end
 
 local function resetalt()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(1000,-300,5000)
-    wait(0.3)
+    task.wait()
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
         if v:IsA("Tool") then
             v.Parent = game.Players.LocalPlayer.Character
@@ -146,7 +146,7 @@ else
                     if enabled then
                         repeat  
                         	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-                            player.Character.HumanoidRootPart.CFrame = workspace.Ignored.Shop:FindFirstChild("[Flowers] - $5").Head.CFrame * CFrame.new(math.random(-4,4),1.3,math.random(-6,-3))
+                            player.Character.HumanoidRootPart.CFrame = workspace.Ignored.Shop:FindFirstChild("[Flowers] - $5").Head.CFrame * CFrame.new(math.random(-4,4),1.3,3)
                             fireclickdetector(workspace.Ignored.Shop:FindFirstChild("[Flowers] - $5"):FindFirstChild("ClickDetector"))
                             wait(0.01)
                         until player.Backpack:FindFirstChild("[FlowersTool]") or player.Character:FindFirstChild("[FlowersTool]")
@@ -169,6 +169,7 @@ else
                                 break
                             end
                         until not player.Backpack:FindFirstChild("[FlowersTool]") and not player.Character:FindFirstChild("[FlowersTool]")
+                        task.wait()
                         resetalt()
                     end
                 end)
